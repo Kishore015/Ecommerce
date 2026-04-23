@@ -1,0 +1,30 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+   "workspaces": [
+    "client",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev:client": "npm --workspace client run start",
+    "dev:backend": "npm --workspace backend run start",
+    "dev": "npm run dev:client & npm run dev:backend",
+    "build": "npm run build:client && npm run build:backend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kishore015/Ecommerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Kishore015/Ecommerce/issues"
+  },
+  "homepage": "https://github.com/Kishore015/Ecommerce#readme"
+}
